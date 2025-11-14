@@ -1,0 +1,97 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<canvas id="radar1"></canvas>
+<canvas id="radar2"></canvas>
+<canvas id="radar3"></canvas>
+<canvas id="radar4"></canvas>
+<canvas id="radar5"></canvas>
+<canvas id="radar6"></canvas>
+<canvas id="radar7"></canvas>
+<canvas id="radar8"></canvas>
+<canvas id="radar9"></canvas>
+<canvas id="radar10"></canvas>
+<canvas id="radar11"></canvas>
+<canvas id="radar12"></canvas>
+
+<div>
+<script>
+const cta = document.getElementById('radar1');
+new Chart(cta, {
+    type: 'radar',
+    data: {
+        labels: ["Força","Vigor","Destreza","Influência","Cognição","Intelecto"],
+        datasets: [{
+            label: "Arauto",
+            data: [3,2,1,2,1,1],
+            fill: true,
+            backgroundColor: "rgba(255,165,0,0.3)",
+            borderColor: "#ff8c00"
+        }]
+    },
+    options: {
+        scales: {
+            r: {
+                min: 0,
+                max: 3,
+                ticks: { display: false }
+            }
+        }
+    }
+});
+</script>  
+</div>
+
+<div>
+<script>
+const ctb = document.getElementById('radar2');
+new Chart(ctb, {
+    type: 'radar',
+    data: {
+        labels: ["Força","Vigor","Destreza","Influência","Cognição","Intelecto"],
+        datasets: [{
+            label: "Bardo",
+            data: [1,1,2,3,2,1],
+            fill: true,
+            backgroundColor: "rgba(138,43,225,0.3)",
+            borderColor: "#800080"
+        }]
+    },
+    options: {
+        scales: {
+            r: {
+                min: 0,
+                max: 3,
+                ticks: { display: false }
+            }
+        }
+    }
+});
+</script>
+</div>
+
+<div>
+<script>
+const ctc = document.getElementById('radar3');
+new Chart(ctc, {
+    type: 'radar',
+    data: {
+        labels: ["Força","Vigor","Destreza","Influência","Cognição","Intelecto"],
+        datasets: [{
+            label: "Caçador",
+            data: [1,1,3,1,2,2],
+            fill: true,
+            backgroundColor: "rgba(0,166,81,0.3)",
+            borderColor: "#00A651"
+        }]
+    },
+    options: {
+        scales: {
+            r: {
+                min: 0,
+                max: 3,
+                ticks: { display: false }
+            }
+        }
+    }
+});
+</script>
+</div>
