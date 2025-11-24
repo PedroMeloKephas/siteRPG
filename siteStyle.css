@@ -1,4 +1,4 @@
-/* Fundo com imagem personalizada */
+/* ---------- Fundo com imagem personalizada ---------- */
 body {
   margin: 0;
   padding: 0;
@@ -12,13 +12,12 @@ body {
   background-repeat: no-repeat;  /* evita repetição da imagem */
   background-color: black;
 }
-
 /* Conteúdo centralizado com fundo escuro translúcido */
 .overlayBackground {
   position: relative;
   background-color: rgba(0, 0, 0, 0.6); /* overlay escuro */
 }
-
+/* Conteúdo geral acima do fundo escuro translúcido */
 .overlayContentOnTop {
   position: relative;
   z-index: 10; /* garante que o conteúdo fique acima do overlay */
@@ -60,13 +59,13 @@ body {
   width: 45px;
   height: 45px;
   object-fit: contain;
+  transition: transform 0.5s ease;
 }
-
 .logoImg:hover {
   border-radius: 9999px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra suave */
   scale: 1.1; /* aumenta ligeiramente ao passar o mouse */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transição suave */
+  transition: box-shadow 0.5s ease; /* transição suave */
 }
 
 .logoText{
@@ -78,11 +77,14 @@ body {
   color: #fcc203;            /* cor laranja ao passar o mouse */
 }
 
+/* ---------- Links de Navegação ----------*/
+
 nav {
   display: flex;              /* flex container para os links */
   gap: 1rem;                  /* espaçamento entre os links */
+  padding-right: 2rem;        /* afastar a direita do botão direito*/
+  margin-left: auto;          /* ajusta para o nav estar adaptado para qualquer resolução*/
 }
-
 .linkNav {
   color: white;              /* cor do texto */
   text-decoration: none;     /* remove o sublinhado */
@@ -197,7 +199,7 @@ nav {
 }
 
 .cardText {
-  font-size: 1.1rem;     /* text-xl → 20px */
+  font-size: 1rem;     /* text-xl → 20px */
   margin-bottom: 0.5rem;  /* mb-2 → 8px */
   text-shadow: rgba(0, 0, 0, 200); /* sombra suave */
 }
